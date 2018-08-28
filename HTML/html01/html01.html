@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <title>Html 01</title>
+        <style>
+            
+            table, td, th{
+                border-style:solid;
+            }
+            
+            
+            h3{
+                text-align: center;
+            }
+        
+            table.table2{
+                border-collapse: collapse;
+            }
+        
+            video{
+                width: 30%;
+                height: 30%;
+            }
+            
+            audio{
+                width: 30%;
+            }
+            
+            hr{
+                width: 30%;
+                margin-left: 0;
+            }
+        </style>
+       
+    </head>
+    <body>
+
+        <main>
+            <!--      ex 1-->
+            
+            <h3>Exercice 1: inline et blocks</h3>
+            
+            <h2>Premiers Pas ! </h2>
+            
+        <h2>Image dans un paragraphe</h2>
+            <p>Un paragraphe contenant un texte associ&eacute; &agrave; une image <img  width="10%" height="10%" src="souf.jpg" alt="soufiane" role="img">. Constate l'image mon pote.</p>
+            
+            <h2>Style inline</h2>
+
+            <p>Un paragraphe contenant <br> des <span style="color: green">Span</span> de couleurs <span style="color: yellow">diff&eacute;rentes</span><br> et un <a href="#">lien</a>. Le tout sur plusieurs lignes</p>
+
+            <!--       ex 2-->
+            
+            <h3>Exercice 2: Listes</h3>
+            
+            <h2>Liste ordonnée</h2>
+            
+            
+
+            <ol>
+                <li>D&eacute;marrer son navigateur</li>
+                <li>Ouvrir la console</li>
+                <li>Coder</li>
+            </ol>
+
+           <h2>Liste imbriquée</h2>
+            <ol>
+                <li>&eacute;lement de niveau 1.1</li>
+                <li>&eacute;lement de niveau 1.2 
+                    <ul>
+                        <li>Premier sous elem du deuxieme elem
+                        <ol>
+                            <li>ajoutez y une sous liste</li>
+                            <li>elle est numérot&eacute;</li>
+                            <li>c'est toujour ok ? </li>
+                        </ol>
+                        </li>
+                        <li>2eme sous elem</li>
+                        <li>3eme sous elem</li>
+                    </ul>
+                </li>
+                <li>elem de niveau 1.1</li>
+            </ol>
+            
+            
+<!--            ex 3 -->
+          
+          <h3>Exercice 3: tables</h3>
+          
+          <h2>Un tableua simple</h2>
+           
+           <table class="table1">
+               <tr>
+                   <td>As</td>
+                   <td >Tr&egrave;fle</td>
+               </tr>
+               
+               <tr >
+                   <td >Carreau</td>
+                   <td >Coeur</td>
+               </tr>
+           </table>
+           
+           <h2>Tableau complexe</h2>
+           
+           <table class="table2">
+               <tr>
+                   <th colspan="2"></th>
+                   <th colspan="2"> Premier Groupe</th>
+                   <th colspan="2">Deuxieme groupe</th>
+               </tr>
+               
+               <tr>
+                   <td></td>
+                   <td>Personne</td>
+                   <td>Singulier</td>
+                   <td>Pluriel</td>
+                   <td>Singulier</td>
+                   <td>Pluriel</td>
+               </tr>
+               
+               <tr>
+                   <td rowspan="3">Pr&eacute;sent</td>
+                   <td>1</td>
+                   <td>Je code</td>
+                   <td>nous codons</td>
+                   <td>je r&eacute;ussis</td>
+                   <td>nous r&eacute;ussissons</td>
+               </tr>
+               <tr>
+                   
+                   <td>2</td>
+                   <td>tu codes</td>
+                   <td> vous codez</td>
+                   <td>tu r&eacute;ussis</td>
+                   <td>vous r&eacute;ussissez</td>
+               </tr>
+               <tr>
+                   
+                   <td>3</td>
+                   <td>il/elle code</td>
+                   <td>ils/elles codent</td>
+                   <td>il/elle r&eacute;ussit</td>
+                   <td>ils/elles r&eacute;ussissent</td>
+               </tr>    
+               
+           </table>
+           
+           <!--               ex 4-->
+               
+               <h3>Exercice 4: players</h3>
+               
+               <h2>Players</h2>
+               
+               <audio controls src="assets/audio/PTain%20de%20mRde.mp3"></audio>
+            <hr>
+            
+            <video controls src="assets/video/Sigala,%20Ella%20Eyre%20-%20Came%20Here%20for%20Love.mp4"></video>
+        </main>
+
+    </body>
+</html>

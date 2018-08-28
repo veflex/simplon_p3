@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Color Blocks</title>
+    <script src="app.js"></script>
+    <style>
+        .blocks {
+            margin-top: 50px;
+            width: 100%;
+            height: auto;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        #blocks>div {
+            width: 50px;
+            height: 50px;
+            margin: 5px;
+            * box-sizing: border-box;
+
+        }
+
+        .border {
+            border: 3px solid red;
+        }
+
+    </style>
+</head>
+
+<body>
+    <input id="number" type="number">
+    <input id="color" type="color">
+    <button id="valider">Valider</button>
+    <button id="suppr">Supprimer</button>
+    <div id="blocks" class="blocks"></div>
+
+
+</body>
+
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Click add object</title>
+
+    <style>
+        button {
+            width: 150px;
+            height: 50px;
+            margin: 5% 30% 0;
+        }
+
+    </style>
+</head>
+
+<body>
+    <label for="donutName">Dite nous le nom du donut que vous voulez:</label>
+    <input type="text" id="donutName" name="donutName" required>
+
+    <label for="donutTaste">Quel gout ?:</label>
+    <input type="text" id="donutTaste" name="donutTaste" required>
+
+
+    <button onclick="addObject(this)">Crée le donut</button>
+
+    <ul id="ul">
+
+    </ul>
+
+    <script src="app.js"></script>
+</body>
+
+</html>

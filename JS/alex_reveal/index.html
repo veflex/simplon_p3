@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>alex reveal</title>
+    <script src="app.js"></script>
+    <style>
+        .root {
+            background: blue;
+            width: 900px;
+            height: auto;
+            margin: auto;
+            padding: 30px 0px;
+            opacity: 0;
+            transition: opacity .7s linear;
+        }
+
+        .child {
+            background: red;
+            width: 700px;
+            height: 70px;
+            margin: 10px auto;
+
+        }
+
+        .is-revealed {
+            opacity: 1;
+        }
+
+        div#root>div {
+            text-align: center;
+            line-height: auto;
+            height: 100px;
+            width: 90%;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div id="text">
+        <p>On doit pouvoir passé au dessus de la div + cliquer sur la checkbox pour activer l'event</p>
+        <input type="checkbox" id="check">
+    </div>
+    <div id="root" class="root">
+        <input type="range" id="rangeDiv" min="10" max="200">
+        <div class="child">a</div>
+        <div class="child">b</div>
+        <div class="child">c</div>
+    </div>
+
+</body>
+
+</html>

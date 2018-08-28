@@ -1,0 +1,64 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+    color: coral;
+    text-align: center;
+}
+
+div#shop {
+    width: 1000px;
+    height: auto;
+    margin: auto;
+}
+
+.article {
+    width: 300px;
+    height: auto;
+    display: inline-block;
+}
+
+.panier {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+
+}
+
+#articles {
+    width: 300px;
+    height: 300px;
+    border: 3px solid coral;
+    position: absolute;
+    top: 70px;
+    right: 50px;
+
+    overflow: auto;
+}
+
+.divPanier {
+    width: 290px;
+    height: auto;
+
+}
+
+.cart {
+    cursor: pointer;
+}
+
+.achats {
+    opacity: 0;
+    -webkit-transition: opacity .5s linear;
+    transition: opacity .5s linear;
+}
+
+.is-revealed {
+    opacity: 1;
+
+}

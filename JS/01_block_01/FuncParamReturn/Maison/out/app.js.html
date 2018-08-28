@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>JSDoc: Source: app.js</title>
+
+    <script src="scripts/prettify/prettify.js"> </script>
+    <script src="scripts/prettify/lang-css.js"> </script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+</head>
+
+<body>
+
+<div id="main">
+
+    <h1 class="page-title">Source: app.js</h1>
+
+    
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>/** 
+ * @fileOverview Documentation décrivant les fonctions crée dans function parametre return I
+ * @author Flex
+ * @version 3.7.4
+ */
+
+/*global document*/
+// Enoncé 1
+
+
+/** @function one */
+/**
+ * La fonction one permet de faire une alerte
+ * @author Flex
+ */
+
+var one = function () {
+    alert("salut ca va");
+};
+one();
+
+
+
+// Enoncé 2
+
+/** @function hello */
+/** 
+ * La fonction hello envois un "hello" dans la console
+ * @author Flex
+ */
+var hello = function () {
+    console.log("hello");
+};
+
+console.log(hello());
+
+// Enoncé 3
+/** @function dymmyReturn */
+/** 
+ * La fonction retourne le parametre 
+ * @author Flex
+ * @param {whatever} un parametre quelconque
+ */
+
+var dummyReturn = function (p) {
+    return p;
+};
+console.log(dummyReturn(13));
+
+// Enoncé 4
+/** @function foo */
+/** 
+ * La fonction retourne la string bar 
+ * @author Flex
+ */
+
+var foo = function () {
+    return "bar";
+};
+
+console.log(foo());
+
+// Enoncé 5
+/** @function helloWho */
+/** 
+ * La fonction retourne hello suivis du nom entré en parametre  
+ * @author Flex
+ * @param {string} le parametre nom
+ */
+
+var helloWho = function (n) {
+    return "hello " + n;
+};
+
+console.log(helloWho("maggle"));
+
+// Enoncé 6
+/** @function isNumber */
+/** 
+ * La fonction Retourne true si n est un nombre, false sinon. 
+ * @author Flex
+ * @param {whatever} un parametre quelconque
+ */
+
+var isNumber = function (n) {
+    if (isNaN(n) === false) {
+        return true;
+    } else {
+        return false;
+    }
+};
+
+console.log(isNumber(12));
+
+// Enoncé 7
+/** @function contraire */
+/** 
+ * Si b n’est pas une booléen, retourner une nouvelle Erreur. Sinon retourner le booléen contraire de b.  
+ * @author Flex
+ * @param {whatever} un parametre quelconque
+ */
+
+var contraire = function (b) {
+    if (typeof (b) !== "boolean") {
+        return alert("erreur pas bool");
+    } else {
+        return !b;
+    }
+};
+
+console.log(contraire(true));
+
+// Enoncé 8
+/** @function isEmpty */
+/** 
+ * 
+ * La fonction retourne true: Si p est un tableau et que sa longueur est nulle. Si p est une string de taille 0. Si p est un objet sans aucune 
+ * propriété. Sinon isEmpty retourne false.
+ * @author Flex
+ * @param {whatever} un parametre quelconque
+ */
+
+var isEmpty = function (p) {
+    if (Array.isArray(p) === true &amp;&amp; p.length == 0) {
+        return "tableau vide";
+    } else if (typeof (p) === "string" &amp;&amp; p.length == 0) {
+        return "chaine vide";
+    } else if (Object.keys(p).length == 0 &amp;&amp; typeof (p) === "object") {
+        return "objet vide";
+    } else {
+        return false;
+    }
+};
+
+//console.log(isEmpty());
+
+
+//Enoncé 9
+/** @function addCSSClass */
+/**
+ * La fonction Sélectionne le (ou les) objet(s) HTML trouvés avec s. Ajouter à chaque élément la classe css, sans écraser les autres classes. 
+ * Retourne un tableau contenant le ou les éléments modifiés.    
+ * @author Flex
+ * @param {string} s - parametre représentant le selecteur css
+ * @param {string} css - parametre représentant la classe a ajouter
+ */
+
+var addCSSClass = function (s, css) {
+    var queryall = document.querySelectorAll(s);
+    console.log("----selector---->");
+    console.log(queryall);
+    var i;
+    for (i = 0; i &lt; queryall.length; i++) {
+        queryall[i].classList.add(css);
+    }
+    return queryall;
+};
+
+//function load
+
+var start = function () {
+    addCSSClass("div", "bendo");
+    console.log("-----isEmpty?--->");
+
+}
+document.addEventListener("DOMContentLoaded", start);
+</code></pre>
+        </article>
+    </section>
+
+
+
+
+</div>
+
+<nav>
+    <h2><a href="index.html">Home</a></h2><h3>Global</h3><ul><li><a href="global.html#addCSSClass">addCSSClass</a></li><li><a href="global.html#contraire">contraire</a></li><li><a href="global.html#dummyReturn">dummyReturn</a></li><li><a href="global.html#dymmyReturn">dymmyReturn</a></li><li><a href="global.html#foo">foo</a></li><li><a href="global.html#hello">hello</a></li><li><a href="global.html#helloWho">helloWho</a></li><li><a href="global.html#isEmpty">isEmpty</a></li><li><a href="global.html#isNumber">isNumber</a></li><li><a href="global.html#one">one</a></li></ul>
+</nav>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.5.5</a> on Mon Jul 30 2018 15:15:14 GMT+0200 (Paris, Madrid (heure d’été))
+</footer>
+
+<script> prettyPrint(); </script>
+<script src="scripts/linenumber.js"> </script>
+</body>
+</html>

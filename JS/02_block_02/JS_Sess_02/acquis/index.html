@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Session 2 acquise ?</title>
+    <script src="app.js"></script>
+    <style>
+        div#red,
+        div#green {
+            width: 50px;
+            height: 50px;
+            display: inline-block;
+            border: 3px solid black;
+            text-align: center;
+            line-height: 50px;
+        }
+
+        div#res_user2 {
+            width: 800px;
+            height: 300px;
+            background: azure;
+            margin: auto;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <div id="red" onclick="invertColor(this)" style="background: red">a</div>
+        <div id="green" onclick="invertColor(this)" style="background: green">b</div>
+    </div>
+
+    <div id="res_user2"></div>
+    <button id="trigger_greetings">Faites les saluer</button>
+</body>
+
+</html>
